@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# 環境変数ファイル
+.env
+.env.development
+.env.production
+.env.local
