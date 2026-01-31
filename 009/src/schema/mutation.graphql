@@ -1,0 +1,13 @@
+type Mutation {
+  # Create a new todo
+  createTodo(input: CreateTodoInput!): Todo!
+
+  # Update an existing todo
+  updateTodo(id: ID!, input: UpdateTodoInput!): Todo
+
+  # Delete a todo
+  deleteTodo(id: ID!): Todo
+
+  # Toggle todo completed status
+  toggleTodo(id: ID!): Todo
+}
