@@ -1,0 +1,26 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc && cp -r src/schema dist/",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "4.11.3",
+    "@prisma/client": "6.19.2",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "pg": "^8.18.0",
+    "prisma": "6.19.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}

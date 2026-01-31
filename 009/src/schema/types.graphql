@@ -1,0 +1,19 @@
+# Todo type definition
+# FEの型定義に合わせる: { id: string, title: string, completed: boolean, createdAt: string }
+type Todo {
+  id: ID!
+  title: String!
+  completed: Boolean!
+  createdAt: String!
+}
+
+# Input type for creating a todo
+input CreateTodoInput {
+  title: String!
+}
+
+# Input type for updating a todo
+input UpdateTodoInput {
+  title: String
+  completed: Boolean
+}

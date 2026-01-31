@@ -1,0 +1,7 @@
+type Query {
+  # Get all todos
+  todos: [Todo!]!
+
+  # Get a single todo by ID
+  todo(id: ID!): Todo
+}
